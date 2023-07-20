@@ -22,7 +22,7 @@ class ElasticsearchKNN(BaseANN):
         self.index_name = f"{metric}-{dimension}-{index_options_str}"
         self.similarity_metric = self._vector_similarity_metric(metric)
 
-        self.client = Elasticsearch(["http://localhost:9200"])
+        self.client = Elasticsearch(["http://10.0.16.157:9200"])
         self.batch_res = []
         self._wait_for_health_status()
 

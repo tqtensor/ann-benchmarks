@@ -35,7 +35,7 @@ class Qdrant(BaseANN):
         self.batch_results = []
 
         qdrant_client_params = {
-            "host": "localhost",
+            "host": "qdrant.pluto.svc.cluster.local",
             "port": 6333,
             "grpc_port": 6334,
             "prefer_grpc": self._grpc,
